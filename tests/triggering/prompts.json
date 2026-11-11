@@ -1,0 +1,32 @@
+{
+  "skill": "under50",
+  "notes": "Equivalence classes per the TDS skill-triggering method (2026-11-10): direct prompts share >=2 content words with the skill name/description and should fire; indirect prompts share none and should fire; near-miss prompts share >=1 word but need a different job and should NOT fire; controls should load no skill. Content words (stemmed): under50, compress, long, markdown, document, triage, brief, 50, word, fewer, read, relief, fast, action, decision.",
+  "classes": {
+    "direct": [
+      "Use under50 to compress this markdown document into a triage brief of 50 words or fewer.",
+      "Triage this markdown document: a brief of 50 words or fewer, conclusion first, with the action it needs.",
+      "Compress this document into a triage brief for reading relief.",
+      "Give me a 50-word triage brief of this markdown document with any action decisions."
+    ],
+    "indirect": [
+      "My teammate pasted a huge AI-generated project update in chat and my meeting starts in two minutes. Give me the core point and what I need to do.",
+      "I dread opening these AI reports, they go on forever. Boil this one down to just what matters.",
+      "This vendor proposal goes on for pages. Tell me only the bottom line and whether anything is needed from me.",
+      "My inbox is full of these AI write-ups. Skim this one and tell me if there is anything I would regret skipping.",
+      "I have twenty seconds before my call. What does this thing actually say, and do I need to do anything?",
+      "The AI wrote me an essay when I asked for three bullets. Cut it to the essentials."
+    ],
+    "near_miss": [
+      "Proofread this markdown README and fix any typos.",
+      "Convert this markdown file to a Word doc.",
+      "Write a product description of 50 words for my coffee listing.",
+      "Count how many words are in this essay.",
+      "Build me a decision matrix comparing these three vendors with weighted scores.",
+      "Translate this document into Bahasa Indonesia."
+    ],
+    "control": [
+      "How do I undo the last git commit but keep the changes?",
+      "What is the difference between TCP and UDP?"
+    ]
+  }
+}
