@@ -43,6 +43,8 @@ To measure firing on your own setup, use the trigger test pack in `tests/trigger
 
 This is an experimental personal project, shared so people can try it and push on it - not because it is proven.
 
+Not proven sharp on the latest Gemini model. Maybe placebo. Tests showed no clear winner.
+
 - The automated suite passes 14/14, but those tests only check word counts on fixed example strings. They do not run an agent.
 - In the first blind A/B pair (one real public regulatory document, with skill vs without, same model), the with-skill output had cleaner bullet formatting but was slightly *worse* on factual fidelity than the plain baseline. A wider paired test set (two more real documents, with and without the skill) is prepared but currently paused.
 - Triggering: the description now carries the pushy sentence described above and `tests/triggering/` ships the firing test pack, but firing has NOT been measured on under50 itself yet. The 15% / 62% figures come from someone else's 26 skills, not this one.
@@ -61,4 +63,3 @@ python3 -m unittest discover -s tests -v
 ## License
 
 MIT - see `LICENSE`.
-
